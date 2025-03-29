@@ -1,18 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { FC, useState, useEffect } from 'react';
 import {
   MovieImage,
   CardWrap,
   OverviewButton,
   Title
 }from './styled'
-
-// Define the shape of a movie
-interface Movie {
-  id: number;
-  title: string;
-  overview: string;
-  poster_path: string;
-}
+import { Movie } from "@/types/types";
 
 // Define props for MovieCard
 interface MovieCardProps {
@@ -20,7 +13,7 @@ interface MovieCardProps {
   handleMovieClick: (movie: Movie) => void;
 }
 
-const MovieCard: React.FC<MovieCardProps> = ({ movie, handleMovieClick }) => {
+const MovieCard: FC<MovieCardProps> = ({ movie, handleMovieClick }) => {
   const { title, overview, poster_path } = movie;
   const [isDescriptionExpanded, setDescriptionExpanded] = useState(false);
 

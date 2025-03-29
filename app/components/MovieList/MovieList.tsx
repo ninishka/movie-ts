@@ -3,12 +3,7 @@
 
 import MovieCard from  "@/app/components/MovieCard/MovieCard";
 import { MovieAppWrap } from './styled'
-
-interface Movie {
-  id: number;
-  title: string;
-  overview: string;
-}
+import { Movie } from "@/types/types";
 
 // Define the props expected by MovieList
 interface MovieListProps {

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Link from "next/link";
 
 
 export const HeaderContainer = styled.div`
@@ -27,7 +28,7 @@ export const NavLinks = styled.div`
   gap: 20px;
 `;
 
-export const NavLink = styled.a`
+export const NavLink = styled(Link)`
   color: white;
   text-decoration: none;
   font-size: 1.1em;
