@@ -1,4 +1,4 @@
-import React, { FC, useState, useEffect } from 'react';
+import React, { FC } from 'react';
 import {
   MovieImage,
   CardWrap,
@@ -14,12 +14,12 @@ interface MovieCardProps {
 }
 
 const MovieCard: FC<MovieCardProps> = ({ movie, handleMovieClick }) => {
-  const { title, overview, poster_path } = movie;
-  const [isDescriptionExpanded, setDescriptionExpanded] = useState(false);
+  const { title, poster_path } = movie;
+  // const [isDescriptionExpanded, setDescriptionExpanded] = useState(false);
 
-  const truncateDescription = (description: string): string => {
-    return description.length > 100 ? description.slice(0, 100) + "..." : description;
-  };
+  // const truncateDescription = (description: string): string => {
+  //   return description.length > 100 ? description.slice(0, 100) + "..." : description;
+  // };
 
   return (
     <CardWrap onClick={() => handleMovieClick(movie)} style={{ cursor: "pointer" }}>

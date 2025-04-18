@@ -32,7 +32,7 @@ const HeaderComponent = forwardRef<HTMLInputElement, HeaderComponentProps>(
             placeholder="Search movies..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            ref={ref} // ✅ Correctly using ref here
+            ref={ref} 
           />
           <SearchButton onClick={handleSearch}>Search</SearchButton>
         </SearchBar>  
@@ -42,5 +42,6 @@ const HeaderComponent = forwardRef<HTMLInputElement, HeaderComponentProps>(
 );
 
 
+HeaderComponent.displayName = 'HeaderComponent';
 
 export default HeaderComponent;

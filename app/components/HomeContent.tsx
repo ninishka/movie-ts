@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import MovieList from "@/app/components/MovieList/MovieList";
 import Loading from "@/app/components/Loading/Loading";
-import MovieCard from "@/app/components/MovieCard/MovieCard";
+// import MovieCard from "@/app/components/MovieCard/MovieCard";
 import HeaderComponent from "@/app/components/HeaderComponent/HeaderComponent";
 import Modal from "@/app/components/Modal/Modal";
 import Footer from "@/app/components/Footer/Footer";
